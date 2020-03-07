@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useFormFieldStore } from "./store/useFormField";
+import DisplayArea from "./DisplayArea";
 
-function App() {
+export default function App() {
+  const {
+    values,
+    updateName,
+    updateEmail,
+    updateAge,
+    updatePhone
+  } = useFormFieldStore();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <input
+        type="text"
+        value={values.name}
+        onChange={e => updateName(e.target.value)}
+        placeholder="Name"
+      />
+      <input
+        type="text"
+        value={values.email}
+        onChange={e => updateEmail(e.target.value)}
+        placeholder="Email"
+      />
+      <input
+        type="text"
+        value={values.phone || ""}
+        onChange={e => updatePhone(e.target.value)}
+        placeholder="Phone"
+      />
+      <input
+        type="number"
+        value={values.age || ""}
+        onChange={e => updateAge(parseInt(e.target.value))}
+        placeholder="Age"
+      />
+      <DisplayArea />
     </div>
   );
 }
-
-export default App;

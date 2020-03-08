@@ -9834,6 +9834,11 @@ rework@1.0.1:
     convert-source-map "^0.3.3"
     css "^2.0.0"
 
+rex-state@0.0.4-beta-9:
+  version "0.0.4-beta-9"
+  resolved "https://registry.yarnpkg.com/rex-state/-/rex-state-0.0.4-beta-9.tgz#8fb1ffa1cac61bbe27103cfa4571663438ca4a27"
+  integrity sha512-LUGKs5vfww883cmU0fqc5vIRCrHJSG6zOo5CFm/8jHY66qBg5s9hcTITkyyz/Cm4LqDFL3H/xDl6cN8xVngQLA==
+
 rgb-regex@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/rgb-regex/-/rgb-regex-1.0.1.tgz#c0e0d6882df0e23be254a475e8edd41915feaeb1"

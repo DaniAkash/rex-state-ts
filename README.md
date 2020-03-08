@@ -1,3 +1,7 @@
+# Rex State & TypeScript project
+
+This project was created as an example project for using [Rex State](https://github.com/daniakash/rex-state) with Typescript.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
